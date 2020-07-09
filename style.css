@@ -57,32 +57,66 @@ button{
 	color: white;
 }
 
-footer{
+.footer{
 	text-align: center;
+	position: sticky;
+	bottom: 0;
 	margin-bottom: 0;
-	color: red
+	color: red;
+
 }
 #clearall {
-	background-color: blue;
+	background-color: red;
 	margin-left: 50%;
 	
 }
 #clearall:hover{
-	background-color: red
+	background-color: pink
 }
 
-@media only screen and(min-width: 768px){
-	.listdiv{
-	border: 1px solid #cc3;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 70%
 
+@media screen and (max-width: 600px){
+	input[type=text] {
+		padding: 12px;
+		outline: 1px solid black
+	}
+input[type=submit] {
+		padding: 12px;
+		outline: 1px solid black;
+		background-color: lightblue;
+		color: blue;
 
+	}
+.header{
+	font-size: 1.5em;
+	font-family: tahoma;
 }
-input{
-	padding: 20px
+
+#items{
+	font-size: 1.5em;
+
+	
+}
+.itemList{
+	font-size: 1.5em
+}
+button{
+	font-size: 18px;
+	padding: 10px
+}
+.listdiv h1{
+	font-size: 2.5em
+}
+.listdiv h2{
+	font-size: 2em
+}
+
+#clearall {
+	background-color: red;
+	margin-left: 50%;
+}
+footer{
+	font-size: 1.5em
 }
 
 }

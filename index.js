@@ -1,28 +1,35 @@
 let form = document.getElementById('form');
-
 let submit = document.getElementById('submit');
 let ul = document.getElementById('items');
 let filter = document.getElementById('filter');
+let clearall = document.getElementById('clearall');
 
 form.addEventListener("submit", add)
-
 function add(e){
 e.preventDefault();
 let input = document.getElementById('input').value;
 
+//to clear the last entry automatically
 form.reset();
+
+//to avoid submiting empty field
 if(!input){
 	return;
 }
-
+//create new item
 let li = document.createElement('li');
 li.className = "itemList";
+
+//create new text which would be the input
 let newText = document.createTextNode(input);
 li.appendChild(newText);
 ul.appendChild(li);
-let button = document.createElement('button');;
+
+//create new element button
+let button = document.createElement('button');
 button.className = "btn"
 
+//create and append x to button for deleting 
 let x = document.createTextNode('X')
 button.appendChild(x);
 button.style.float = "right";
@@ -31,6 +38,7 @@ li.appendChild(button)
 console.log(li)
 }
 
+//to remove an item
 ul.addEventListener('click', remove);
 
 function remove(e){
@@ -41,7 +49,7 @@ function remove(e){
 	}
 }
 }
-
+// to filter 
 filter.addEventListener('keyup', search);
 
 function search(e){
@@ -74,8 +82,7 @@ function search(e){
 	
 	}
 
-	let clearall = document.getElementById('clearall');
-
+	//to clear all
 	clearall.addEventListener('click', clear)
 
 	function clear(){
