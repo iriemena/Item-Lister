@@ -9,6 +9,12 @@
 	top: 0
 }*/
 
+*{
+	padding-left: 3px;
+	padding-right: 3px;
+	margin: 0;
+	box-sizing: border-box;
+}
 .header{
 	background-color: green;
 	color: rgba(150,0,0,1);
@@ -16,7 +22,8 @@
 	text-align: center;
 	position: sticky;
 	top: 0;
-	border-radius: 2px
+	border-radius: 2px;
+	font-size: 2rem
 }
 
 input{
@@ -52,6 +59,7 @@ input{
 	border-bottom: 1px solid #ccc;
 }
 
+
 button{
 	background-color: red;
 	color: white;
@@ -77,46 +85,48 @@ button{
 
 @media screen and (max-width: 600px){
 	input[type=text] {
-		padding: 12px;
+		padding:5px;
 		outline: 1px solid black;
 
 	}
 input[type=submit] {
-		padding: 12px;
+		padding: 5px;
 		outline: 1px solid black;
 		background-color: lightblue;
 		color: blue;
 
 	}
 .header{
-	font-size: 1.5em;
+	font-size: 1.2rem;
 	font-family: tahoma;
 	margin: 0;
 
 }
 
-#items{
-	font-size: 1.5em;
 
-	
-}
-.itemList{
-	font-size: 1.5em
+.itemList {
+	font-size: 1.2rem;
+	padding: 5px
 }
 button{
-	font-size: 18px;
-	padding: 10px
+	padding: 2px;
 }
+
 .listdiv h1{
-	font-size: 2.5em
+	font-size: 1.5rem;
+	padding-top: 10px;
+	
 }
 .listdiv h2{
-	font-size: 2em
+	font-size: 1.5rem;
+	color: orange;
+	padding-top: 10px;
+	
 }
 
 #clearall {
 	background-color: red;
-	margin-left: 40%;
+	margin-left: 50%;
 }
 
 footer{
