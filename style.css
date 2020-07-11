@@ -105,12 +105,9 @@ input[type=submit] {
 
 
 .itemList {
-	font-size: 1.2rem;
 	padding: 5px
 }
-button{
-	padding: 2px;
-}
+
 
 .listdiv h1{
 	font-size: 1.5rem;
