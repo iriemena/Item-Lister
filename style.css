@@ -9,124 +9,110 @@
 	top: 0
 }*/
 
-*{
-	padding-left: 4px;
-	padding-right: 4px;
-	margin: 0;
-	box-sizing: border-box;
+* {
+  padding-left: 4px;
+  padding-right: 4px;
+  margin: 0;
+  box-sizing: border-box;
 }
-.header{
-	background-color: green;
-	color: rgba(150,0,0,1);
-	text-transform: uppercase;
-	text-align: center;
-	position: sticky;
-	top: 0;
-	border-radius: 2px;
-	font-size: 2rem
-}
-
-input{
-	padding: 7px;
-}
-.filter input{
-	padding: 7px;
-	margin-bottom: 10px
+.header {
+  background-color: green;
+  color: rgba(150, 0, 0, 1);
+  text-transform: uppercase;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  border-radius: 2px;
+  font-size: 2rem;
 }
 
-.listdiv{
-	border: 1px solid #ccc;
-
-
+input {
+  padding: 7px;
+}
+.filter input {
+  padding: 7px;
+  margin-bottom: 10px;
 }
 
-.listdiv > input{
-	margin-top: 10px;
-	margin-left: 10px;
+.listdiv {
+  border: 1px solid #ccc;
 }
 
-#items{
-	background-color: #f4f4f4;
-	list-style: none;
-	padding: 0;
-	margin-left: 10px;
-	margin-right: 10px;
-	
-}
-.itemList{
-	padding: 10px;
-	margin-bottom: 2px;
-	border-bottom: 1px solid #ccc;
+.listdiv > input {
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
-
-button{
-	background-color: red;
-	color: white;
+#items {
+  background-color: #f4f4f4;
+  list-style: none;
+  padding: 0;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-
-.footer{
-	text-align: center;
-	position: sticky;
-	bottom: 0;
-	margin-bottom: 0;
-	color: red;
-
-}
-#clearall {
-	background-color: red;
-	margin-left: 50%;
-	
-}
-#clearall:hover{
-	background-color: pink
-}
-
-
-@media screen and (max-width: 600px){
-	input[type=text] {
-		padding:5px;
-		outline: 1px solid black;
-
-	}
-input[type=submit] {
-		padding: 5px;
-		outline: 1px solid black;
-		background-color: lightblue;
-		color: blue;
-
-	}
-.header{
-	font-size: 1.2rem;
-	font-family: tahoma;
-	margin: 0;
-
-}
-
-
 .itemList {
-	padding: 5px
+  padding: 10px;
+  margin-bottom: 2px;
+  border-bottom: 1px solid #ccc;
 }
 
-
-.listdiv h1{
-	font-size: 1.5rem;
-	padding-top: 10px;
-	
-}
-.listdiv h2{
-	font-size: 1.5rem;
-	color: orange;
-	padding-top: 10px;
-	
+button {
+  background-color: red;
+  color: white;
 }
 
+.footer {
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+  margin-bottom: 0;
+  color: red;
+}
 #clearall {
-	background-color: red;
-	margin-left: 40%;
+  background-color: red;
+  margin-left: 50%;
+}
+#clearall:hover {
+  background-color: pink;
 }
 
-footer{
-	color: pink
-}
+@media screen and (max-width: 600px) {
+  input[type="text"] {
+    padding: 5px;
+    outline: 1px solid black;
+  }
+  input[type="submit"] {
+    padding: 5px;
+    outline: 1px solid black;
+    background-color: lightblue;
+    color: blue;
+  }
+  .header {
+    font-size: 1.2rem;
+    font-family: tahoma;
+    margin: 0;
+  }
+
+  .itemList {
+    padding: 5px;
+  }
+
+  .listdiv h1 {
+    font-size: 1.5rem;
+    padding-top: 10px;
+  }
+  .listdiv h2 {
+    font-size: 1.5rem;
+    color: orange;
+    padding-top: 10px;
+  }
+
+  #clearall {
+    background-color: red;
+    margin-left: 40%;
+  }
+
+  footer {
+    color: pink;
+  }
 }
